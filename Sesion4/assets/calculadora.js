@@ -13,6 +13,13 @@ function calcularSuma() {
     
     //Mostramos en consola
     console.log(resulado);
+
+    //Mostramos el resultado en el documento
+    let etiquetaResultado = document.createElement("p");
+    etiquetaResultado.id = "resultado";
+    etiquetaResultado.innerHTML = resulado;
+
+    document.getElementById("operandos").appendChild(etiquetaResultado);
 };
 
 function calcularResta() {
@@ -29,6 +36,13 @@ function calcularResta() {
     
     //Mostramos en consola
     console.log(resulado);
+
+    //Mostramos el resultado en el documento
+    let etiquetaResultado = document.createElement("p");
+    etiquetaResultado.id = "resultado";
+    etiquetaResultado.innerHTML = resulado;
+
+    document.getElementById("operandos").appendChild(etiquetaResultado);
 }
 
 function calcularProducto() {
@@ -45,6 +59,13 @@ function calcularProducto() {
     
     //Mostramos en consola
     console.log(resulado);
+
+    //Mostramos el resultado en el documento
+    let etiquetaResultado = document.createElement("p");
+    etiquetaResultado.id = "resultado";
+    etiquetaResultado.innerHTML = resulado;
+
+    document.getElementById("operandos").appendChild(etiquetaResultado);
 }
 
 function calcularDivision() {
@@ -61,4 +82,11 @@ function calcularDivision() {
     
     //Mostramos en consola
     console.log(resulado);
+
+    //Mostramos el resultado en el documento
+    let etiquetaResultado = document.createElement("p");
+    etiquetaResultado.id = "resultado";
+    etiquetaResultado.innerHTML = resulado;
+
+    document.getElementById("operandos").appendChild(etiquetaResultado);
 }

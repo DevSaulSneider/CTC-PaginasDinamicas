@@ -1,0 +1,43 @@
+*{
+    background: rgb(196, 220, 243);
+}
+
+.center{
+    text-align: center;
+    color: blue;
+}
+
+#operandos{
+    padding: 15px;
+}
+
+#operandos input{
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#botones button{
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#adicion{
+    background-color: red;
+}
+
+#sustraccion{
+    background: blue;
+}
+
+#multiplicacion{
+    background: green;
+}
+
+#division{
+    background: orange;
+}
+
+#botones button:hover{
+    color: white;
+}
