@@ -1,3 +1,14 @@
 *{
     background: rgb(177, 162, 151);
 }
+
+.centro{
+    text-align: center;
+}
+
+.caja{
+    /* background-color: red; */
+    padding: 20px;
+    margin: 50px 100px;
+    border: 2px solid black;
+}
