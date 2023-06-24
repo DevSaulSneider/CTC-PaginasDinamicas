@@ -43,4 +43,15 @@ function drawPacman() {
   canvasSprite.fillStyle = "black";
   canvasSprite.fill();
 }
-drawPacman()
+//drawPacman()
+
+function drawGhost(x, y, color) {
+  //Transformar cuadramos a pixeles
+  let width = squareSize * widthGosth;
+  x = squareSize * x + squareSize / 2;
+  y = squareSize * y + squareSize / 4;
+
+  let radius = width / 2;
+
+  canvasSprites.beginPath();
+}
