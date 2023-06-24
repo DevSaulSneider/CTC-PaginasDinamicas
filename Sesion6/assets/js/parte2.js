@@ -61,7 +61,7 @@ function drawGhost(x, y, color) {
   canvasSprite.lineTo(x + radius, y + 0.75 * width); //Recta hacia abajo
   canvasSprite.lineTo(x + 0.5 * radius, y + 0.5 * radius); // Digonal hacia arriba-izquierda
   canvasSprite.lineTo(x, y + 0.75 * width); // Diagonal hacia abajo-izquierda
-  canvasSprite.lineTo(x - 0.5 * radius, y +0.5 * width); //Diagonal hacia arriba-izquierda
+  canvasSprite.lineTo(x - 0.5 * radius, y + 0.5 * width); //Diagonal hacia arriba-izquierda
   canvasSprite.lineTo(x - radius, y + 0.75 * width); //Diagonal hacia abajo-izquierda
   canvasSprite.lineTo(x - radius, y); // Recta hacia arriba
 
