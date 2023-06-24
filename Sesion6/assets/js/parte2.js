@@ -53,5 +53,46 @@ function drawGhost(x, y, color) {
 
   let radius = width / 2;
 
-  canvasSprites.beginPath();
+  canvasSprite.beginPath();
+
+  //Creamos el semicirculo
+  canvasSprite.arc(x, y, radius, Math.PI, 0) //Semi circulo (cabeza de fantasma)
+  canvasSprite.moveTo( x + radius, y);
+  canvasSprite.lineTo(x + radius, y + 0.75 * width); //Recta hacia abajo
+  canvasSprite.lineTo(x + 0.5 * radius, y + 0.5 * radius); // Digonal hacia arriba-izquierda
+  canvasSprite.lineTo(x, y + 0.75 * width); // Diagonal hacia abajo-izquierda
+  canvasSprite.lineTo(x - 0.5 * radius, y +0.5 * width); //Diagonal hacia arriba-izquierda
+  canvasSprite.lineTo(x - radius, y + 0.75 * width); //Diagonal hacia abajo-izquierda
+  canvasSprite.lineTo(x - radius, y); // Recta hacia arriba
+
+  canvasSprite.fillStyle = color;
+  canvasSprite.fill();
+
+  //Creamos los Ojos
+  canvasSprite.beginPath();
+  canvasSprite.ellipse(x - 0.5 * radius, y, 0.25 * radius, 0.5 * radius, 0, 0, 2 * Math.PI);
+  canvasSprite.ellipse(x + 0.5 * radius, y, 0.25 * radius, 0.5 * radius, 0, 0, 2 * Math.PI);
+  canvasSprite.fillStyle = "white";
+  canvasSprite.fill();
+
+  canvasSprite.beginPath();
+  canvasSprite.arc(x - 0.5 * radius, y, 0.12 * radius, 0, 2 * Math.PI);
+  canvasSprite.arc(x + 0.5 * radius, y, 0.12 * radius, 0, 2 * Math.PI);
+  canvasSprite.fillStyle = "black";
+  canvasSprite.fill();
 }
+
+//Food
+function drawFood(x, y, color) {
+  let size = squareSize * sizeFoot;
+  x = squareSize * x;
+  y = squareSize * y;
+
+  canvasSprite.beginPath();
+  canvasSprite.rect(x - size, y -size, size, size);
+  canvasSprite.fillStyle = color;
+  canvasSprite.fill();
+}
+
+drawPacman();
+drawGhost(10, 10, "red");
