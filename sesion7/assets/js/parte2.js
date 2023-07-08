@@ -27,3 +27,15 @@ function moveRight_Pacman() {
     xPacman += 1;
   }
 }
+
+function moveLeft_Pacman() {
+  
+}
+
+function moveUp_Pacman() {
+  
+}
+
+function moveDown_Pacman() {
+  
+}

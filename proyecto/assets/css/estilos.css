@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: white;
+  height: 80px;
+  padding: 0 15px;
+}
+
+ul{
+  display: flex;
+  gap: 35px;
+}
+
+li{
+  list-style: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.menu{
+  display: none;
+}
+
